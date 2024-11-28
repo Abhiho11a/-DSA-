@@ -1,3 +1,4 @@
+//program to print maximum subarray sum
 #include<iostream>
 #include<climits>
 using namespace std;
@@ -8,6 +9,8 @@ main()
   int csum=0;
   int maxsum=INT_MIN;
   int arr[100];
+
+  //INPUTTING
   cout<<"enter number of elements ";
   cin>>n;
   cout<<"enter array elements ";
@@ -16,6 +19,8 @@ main()
     cin>>arr[i];
   }
 
+
+  
   //TO PRINT ALL SUBSETS
   for(int i=0;i<n;i++)
   {
@@ -28,6 +33,9 @@ main()
       cout<<" ";
     }cout<<endl;
   }
+
+
+
   
   for(int i=0;i<n;i++)
   {
@@ -35,6 +43,8 @@ main()
      maxsum=max(csum,maxsum);   
   
   }
+
+  
 cout<<"maximum sum of subset of an array is"<< maxsum;
 }
 
