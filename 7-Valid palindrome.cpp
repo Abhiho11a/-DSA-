@@ -14,30 +14,28 @@ int main()
         if(isalnum(s[i]))
         {
 
-            if(isalnum(s[j]))
-            {
+         if(isalnum(s[j]))
+          {
                 
-                 if(tolower(s[i])!=tolower(s[j]))
-                 {
-                    ans= false;
-                 }
-            
-            }
-            else
+            if(tolower(s[i])!=tolower(s[j]))
             {
-            j--;
-            continue;}
-        }
+             ans= false;
+            }
+            
+         }
+         else
+         {
+         j--;
+         continue;}
+       }
         else
         {
-            i++;
-            continue;
-        }
-            
+        i++;
+        continue;
+        }    
     i++; 
     j--;
-    }
-        
+    }    
 if(ans)
 {
     cout<<"IT IS A PALINDROME";
