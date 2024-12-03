@@ -56,7 +56,7 @@ int main()
   cin>>s1;
   cout<<"enter the string ";
   cin>>s2;
-  cout<<check(s1,s2);
+  cout<<check(s1,s2);//RETURNS 0,IF SUBSTRING IS NOT PRESENT IN STRING 
 
 }
 
