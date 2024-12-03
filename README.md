@@ -1,2 +1,2 @@
 # C++ programming-
-solving c++ programming problems and trying to learn DSA through it
+solving c++ programming problems and practicing DSA through it
