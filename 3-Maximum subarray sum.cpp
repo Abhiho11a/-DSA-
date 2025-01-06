@@ -6,8 +6,6 @@ int maxsum= INT_MIN;
 main()
 {
   int n;
-  int csum=0;
-  int maxsum=INT_MIN;
   int arr[100];
 
   //INPUTTING
@@ -20,8 +18,7 @@ main()
   }
 
 
-  
-  //TO PRINT ALL SUBSETS
+//TO PRINT ALL SUBSETS
   for(int i=0;i<n;i++)
   {
     for(int j=0;j<n;j++)
@@ -36,10 +33,11 @@ main()
 
 
 
-  
+  int csum=arr[0];
+  int maxsum=arr[0];
   for(int i=0;i<n;i++)
   {
-     csum=csum+arr[i];
+     csum=max(csum+arr[i],arr[i]);
      maxsum=max(csum,maxsum);   
   
   }
